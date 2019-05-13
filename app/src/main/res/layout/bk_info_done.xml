@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/login_btn"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We will be send you the Blueprint of your book for check on your Mail-id and If you find any Error mail back us."
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="italic|bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_ohk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:text="Ohk !!!"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/login_btn"
+        android:padding="@dimen/_10sdp"/>
+</LinearLayout>

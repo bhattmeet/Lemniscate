@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/bk_img"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/bk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="book name"
+            android:layout_toEndOf="@id/bk_img"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/bk_gener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gener"
+            android:layout_below="@id/bk_name"
+            android:layout_toEndOf="@id/bk_img"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_12ssp"
+            android:maxLines="1"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bk_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quan"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_15sdp"/>
+
+    <TextView
+        android:id="@+id/bk_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/bk_quantity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_15sdp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

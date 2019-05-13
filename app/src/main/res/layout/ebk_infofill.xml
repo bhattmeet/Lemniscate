@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="E-Book Information Form"
+                android:textSize="@dimen/_22ssp"
+                android:isScrollContainer="false"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:gravity="start"
+                android:textColor="#FFF"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_form"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/login_btn"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email-id"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/login_btn"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Author Name"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/login_btn"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title of Book"
+                android:textSize="@dimen/_18ssp"
+                android:padding="@dimen/_12sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/login_btn"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is your MenuScript Ready ?"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_18ssp"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_uploadfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp">
+                <TextView
+                    android:id="@+id/tv_uploadfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload File"
+                    android:layout_gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_22ssp"/>
+                <Button
+                    android:id="@+id/upload_file"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:drawableStart="@drawable/ic_link_black_24dp"
+                    android:background="@drawable/round_btn"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:rippleColor="@color/colorPrimaryDark"
+                    android:elevation="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_uploadcover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp">
+                <TextView
+                    android:id="@+id/tv_uploadcover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Cover"
+                    android:layout_gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_22ssp"/>
+                <Button
+                    android:id="@+id/upload_cover"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:drawableStart="@drawable/ic_link_black_24dp"
+                    android:background="@drawable/round_btn"
+                    android:layout_gravity="center"
+                    app:rippleColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:elevation="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:background="@drawable/round_btn"
+                android:drawableStart="@drawable/ic_check_black_24dp"
+                android:gravity="center"
+                app:rippleColor="@color/colorPrimaryDark"
+                android:elevation="@dimen/_10sdp"
+                android:paddingStart="@dimen/_11sdp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

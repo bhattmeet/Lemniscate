@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3D33FF"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Book Format"
+            android:textColor="#000"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_22ssp"
+            android:background="#FFF"
+            android:textStyle="bold|italic"
+            android:isScrollContainer="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002" />
+
+            <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/ll_sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:background="#FFF"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/img_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@mipmap/standard_paperback"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Standard Paperback"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold|italic"
+                        android:focusable="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:background="#FFF"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/img_pp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@mipmap/premium_paperback"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Premium Paperback"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic"
+                        android:focusable="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/ll_ph"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@mipmap/professional_hardcover" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Professional Hardcover"
+                    android:textColor="#000"
+                    android:textSize="23sp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold|italic"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/img_pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@mipmap/pocket_book"
+                    android:focusable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Pocket Book"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold|italic"
+                    android:focusable="true" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

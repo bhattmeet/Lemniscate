@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="@dimen/_16ssp"
+        android:layout_toEndOf="@+id/profile_photo"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"/>
+
+    <ImageView
+        android:id="@+id/option"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <ImageView
+        android:id="@+id/image_heart"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_heart_white"
+        android:layout_below="@+id/post_image"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+    <ImageView
+        android:id="@+id/comment_bubble"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/post_image"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@id/image_heart"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:src="@mipmap/chatbubble" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@mipmap/bookmark"
+        android:layout_below="@id/post_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/tv_loves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loves"
+        android:textColor="#000"
+        android:textSize="@dimen/_14ssp"
+        android:layout_below="@id/image_heart"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/tv_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="caption"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="#000"
+        android:layout_below="@id/tv_loves"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/tv_hashtags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_loves"
+        android:layout_toEndOf="@id/tv_caption"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="#Hashtags"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/tv_comments_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:clickable="true"
+        android:textSize="@dimen/_14ssp"
+        android:layout_below="@id/tv_hashtags"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textColor="#000"
+        android:textSize="@dimen/_12ssp"
+        android:layout_below="@id/tv_comments_link"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"/>
+</RelativeLayout>

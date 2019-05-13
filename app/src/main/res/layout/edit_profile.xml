@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_close_white_24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_check_white_24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_main">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:civ_border_width="@dimen/_2sdp"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:src="@mipmap/b1"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"/>
+                <EditText
+                    android:id="@+id/et_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Geners"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/et_gener"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/et_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email-id"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No."
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/et_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>
